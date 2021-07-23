@@ -11,63 +11,85 @@
             background-image: url('img/Unsplash/Dark20_joel-filipe-QwoNAhbmLLo-unsplash.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            background-
         }
 
-        .menu {
+        .left {
             float: left;
-            width: 20%;
-        }
-
-        .menuitem {
-            padding: 8px;
-            margin-top: 7px;
-            border-bottom: 1px solid #f1f1f1;
-        }
-
-        .main {
-            float: left;
-            width: 60%;
+            width: 50%;
+            max-width: 500px;
             padding: 0 20px;
             overflow: hidden;
+            color: white;
+            background-color: black;
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+        }
+
+        .sectioncontent {
+            float: left;
+            width: 100%;
+            padding: 0 20px;
+            overflow: hidden;
+            color: black;
+            text-align: left;
+            background-color: white;
         }
 
         .right {
-            background-color: lightblue;
             float: left;
-            width: 20%;
+            width: 30%;
+            max-width: 350px;
             padding: 10px 15px;
             margin-top: 7px;
+            background-color: black;
         }
 
         .phrase, .spacelabsmainlogo {
-            width: 30%;
+            width: 33%;
             float: left;
             text-align: center;
             color: white;
         }
 
-        
+        button {
+            color: white;
+            background-color: dodgerblue;
+            text-align: center;
+            margin: auto;
+            display: block;
+        }
+
+        .join {
+            background-color: black;
+            float: left;
+            width: 30%;
+            max-width: 500px;
+            padding: 0 20px;
+            overflow: hidden;
+        }
 
         @media only screen and (max-width:800px) {
             /* For tablets: */
-            .main {
-                width: 80%;
-                padding: 0;
+            .left {
+                width: 100%;
+                /*padding: 0;*/
             }
 
             .right {
                 width: 100%;
             }
 
-            .phrase, .spacelabsmainlogo {
+            .phrase, .spacelabsmainlogo, .join {
                 width: 100%;
             }
         }
 
         @media only screen and (max-width:500px) {
             /* For mobile phones: */
-            .menu, .main, .right, .phrase, .title, .spacelabsmainlogo {
+            .menu, .main, .right, .phrase, .title, .spacelabsmainlogo, .join {
                 width: 100%;
             }
         }
@@ -76,8 +98,8 @@
 <body style="font-family:Verdana;">
 
     <div style="overflow:auto">
-        <div class="spacelabsmainlogo" >
-            <img src="img/SpaceLabsHQ/SpaceLabs-FondSombre.png" style="width:30%">
+        <div class="spacelabsmainlogo">
+            <img src="img/SpaceLabsHQ/SpaceLabs-FondSombre.png" style="width:40%">
         </div>
         <div class="phrase">
             <h3>Solutions numériques pour l'industrie et l'éducation</h3>
@@ -85,31 +107,51 @@
     </div>
 
     <div style="overflow:auto">
-        <div class="menu">
-            <div class="menuitem">The Walk</div>
-            <div class="menuitem">Transport</div>
-            <div class="menuitem">History</div>
-            <div class="menuitem">Gallery</div>
-        </div>
 
-        <div class="main">
-            <h2>The Walk</h2>
-            <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
-            <img src="img_5terre.jpg" style="width:100%">
+        <div class="left">
+            <h2 class="title">Qui sommes-nous ?</h2>
+            <div class="sectioncontent">
+                <p>
+                    SpaceLabs, c'est une équipe de 6 apprentis-ingénieurs passionnés
+                    par la technologie et qui souhaite partager ses connaissances
+                    dans l'éducation.<br /><br />
+
+                    Travaillant actuellement dans l'industrie et issus de formations
+                    différentes, nous avons des compétences que nous sommes
+                    de mettre à l'épreuve
+                </p>
+                <img src="img/Unsplash/andy-holmes-rCbdp8VCYhQ-unsplash.jpg" align="right" style="width:20%">
+                <button>Qui sommes-nous ?</button>
+            </div>
+
         </div>
 
         <div class="right">
-            <h2>What?</h2>
-            <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
-            <h2>Where?</h2>
-            <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
-            <h2>Price?</h2>
-            <p>The Walk is free!</p>
+            <h2 class="title">Nos solutions pour l'éducation</h2>
+            <div class="sectioncontent">
+                <p>
+                    Initialisation à la programmation sur
+                    des vrais robots ! <br /><br />
+
+                    Souhaitez-vous offrir une
+                    expérience enrichissante
+                    et ludique à vos élèves
+                    avec des robots éducatifs adaptés à
+                    chaque niveau ?
+                </p>
+                <img src="img/Unsplash/andy-holmes-rCbdp8VCYhQ-unsplash.jpg" align="right" style="width:20%">
+                <button>Pour l'éducation</button>
+
+            </div>
         </div>
     </div>
 
-
-    <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+    <div style="overflow:auto">
+        <div class="join">
+            <p style="color: white;text-align:center;">Participez à l'expérience SpaceLabs !</p>
+            <button>Nous rejoindre</button>
+        </div>
+    </div>
 
 </body>
 </html>
