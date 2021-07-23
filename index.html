@@ -61,6 +61,7 @@
             background: rgba(20, 20, 20, 0.8);
             border-radius: 45px;
             border-color: transparent;
+            transform: translateX(40px);
         }
 
         .phrase {
@@ -69,6 +70,7 @@
             text-align: center;
             color: white;
             font-weight: normal;
+            transform: translateY(50px);
         }
 
         .spacelabsmainlogo {
@@ -89,16 +91,17 @@
             border-color: transparent;
             width: 180px;
             height: 36px;
-            transform:translateY(-17px);
+            transform: translateY(-17px);
+            padding: 0 20px;
         }
 
         .join {
             background: rgba(20, 20, 20, 0.8);
             float: left;
             width: 30%;
-            padding: 0 20px;
             overflow: hidden;
             border-radius: 45px;
+            padding: 0 20px;
             border-color: transparent;
         }
 
@@ -114,26 +117,46 @@
             border-color: transparent;
         }
 
+        .section {
+            padding: 0 40px 0 40px;
+        }
+
         @media only screen and (max-width:800px) {
             /* For tablets: */
             .left {
                 width: 100%;
-                /*padding: 0;*/
+
+            }
+
+            .right {
+                width: 100%;
+                transform: translateX(0px);
+            }
+
+            .phrase, .spacelabsmainlogo, .join, .big {
+                width: 100%;
+            }
+
+            .phrase {
+                transform: translateY(-20px);
+            }
+
+            
+        }
+
+        @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .phrase, .title, .spacelabsmainlogo, .join, .big {
+                width: 100%;
             }
 
             .right {
                 width: 100%;
             }
 
-            .phrase, .spacelabsmainlogo, .join, .big {
-                width: 100%;
-            }
-        }
+            .phrase {
 
-        @media only screen and (max-width:500px) {
-            /* For mobile phones: */
-            .menu, .main, .right, .phrase, .title, .spacelabsmainlogo, .join, .big {
-                width: 100%;
+                padding: 20px;
             }
         }
     </style>
@@ -150,54 +173,59 @@
     </div>
 
     <div style="overflow:auto">
+        <div class="section" >
+            <div class="left">
+                <h2 class="title">Qui sommes-nous ?</h2>
+                <div class="sectioncontent">
+                    <p>
+                        SpaceLabs, c'est une équipe de 6 apprentis-ingénieurs passionnés
+                        par la technologie et qui souhaite partager ses connaissances
+                        dans l'éducation.<br /><br />
 
-        <div class="left">
-            <h2 class="title">Qui sommes-nous ?</h2>
-            <div class="sectioncontent">
-                <p>
-                    SpaceLabs, c'est une équipe de 6 apprentis-ingénieurs passionnés
-                    par la technologie et qui souhaite partager ses connaissances
-                    dans l'éducation.<br /><br />
-
-                    Travaillant actuellement dans l'industrie et issus de formations
-                    différentes, nous avons des compétences que nous sommes
-                    de mettre à l'épreuve
-                </p>
-                <img src="img/Unsplash/andy-holmes-rCbdp8VCYhQ-unsplash.jpg" align="right" style="width:20%">
-            </div>
-            <button>Qui sommes-nous ?</button>
-
-        </div>
-
-        <div class="right">
-            <h2 class="title">Nos solutions pour l'éducation</h2>
-            <div class="sectioncontent">
-                <p>
-                    Initialisation à la programmation sur
-                    des vrais robots ! <br /><br />
-
-                    Souhaitez-vous offrir une
-                    expérience enrichissante
-                    et ludique à vos élèves
-                    avec des robots éducatifs adaptés à
-                    chaque niveau ?
-                </p>
-                <img src="img/Unsplash/andy-holmes-rCbdp8VCYhQ-unsplash.jpg" align="right" style="width:20%">
+                        Travaillant actuellement dans l'industrie et issus de formations
+                        différentes, nous avons des compétences que nous sommes
+                        de mettre à l'épreuve
+                    </p>
+                    <img src="img/Unsplash/andy-holmes-rCbdp8VCYhQ-unsplash.jpg" align="right" style="width:20%">
+                </div>
+                <button>Qui sommes-nous ?</button>
 
             </div>
-            <button>Pour l'éducation</button>
         </div>
+        
+        <div class="section">
+
+            <div class="right">
+                <h2 class="title">Nos solutions pour l'éducation</h2>
+                <div class="sectioncontent">
+                    <p>
+                        Initialisation à la programmation sur
+                        des vrais robots ! <br /><br />
+
+                        Souhaitez-vous offrir une
+                        expérience enrichissante
+                        et ludique à vos élèves
+                        avec des robots éducatifs adaptés à
+                        chaque niveau ?
+                    </p>
+                    <img src="img/Unsplash/andy-holmes-rCbdp8VCYhQ-unsplash.jpg" align="right" style="width:20%">
+
+                </div>
+                <button>Pour l'éducation</button>
+            </div>
+        </div>
+
     </div>
 
-    <div style="overflow:auto">
+    <div class="section" style="overflow:auto">
         <div class="join">
-            <h2 class="title" style="font-size: medium">Participez à l'expérience SpaceLabs !</h2>
+            <h2 class="title" style="font-size: medium; padding:15px">Participez à l'expérience SpaceLabs !</h2>
             <button>Nous rejoindre</button>
         </div>
 
     </div>
 
-    <div style="overflow:auto">
+    <div class="section" style="overflow:auto">
 
         <div class="big">
             <h2 class="title">Nos solutions pour l'industrie</h2>
