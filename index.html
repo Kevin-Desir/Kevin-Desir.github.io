@@ -36,7 +36,6 @@
             border-bottom-color: white;
             border-bottom-width: 1.5px;
             width: 180px;
-
         }
 
         .title {
@@ -51,7 +50,7 @@
             padding: 0 20px;
             overflow: hidden;
             color: black;
-            text-align: jus;
+            text-align: left;
             background-color: white;
             font-weight: 300;
             border-radius: 45px;
@@ -138,6 +137,7 @@
         .contentimg {
             transform: translateY(10px);
             padding: 10px;
+            width:35%;
         }
 
         strong {
@@ -145,13 +145,39 @@
             font-weight: normal;
         }
 
+        .socials {
+            background-color: transparent;
+            width: 20px;
+            height: 45px;
+            border-radius: 1000px;
+            float: left;
+
+        }
+
+        .socialsimg {
+            width: 35px;
+            border-radius: 0;
+            transform: translate3d(-14.5px, 5px, 0px);
+        }
+
+        .socialsdiv {
+            width: 33%;
+            float: left;
+
+        }
+
+        .socialdivlayout {
+            display: flex;
+            justify-content: center;
+            transform: translateY(110px);
+        }
+
         @media only screen and (max-width:990px) {
             /* For tablets: */
             .left {
                 width: 100%;
-
             }
-            
+
             * {
                 font-size: 17px;
             }
@@ -161,7 +187,7 @@
                 transform: translateX(0px);
             }
 
-            .phrase, .join, .big {
+            .phrase, .join, .big, .socialsdiv {
                 width: 100%;
             }
 
@@ -178,11 +204,24 @@
             .section {
                 padding: 0 20px;
             }
+
+            .socialdivlayout {
+                display: flex;
+                justify-content: center;
+                transform: translateY(0);
+            }
+
+            .contentimg {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                transform: translateY(0);
+            }
         }
 
         @media only screen and (max-width:500px) {
             /* For mobile phones: */
-            .menu, .main, .phrase, .title, .spacelabsmainlogo, .join, .big {
+            .menu, .main, .phrase, .title, .spacelabsmainlogo, .join, .big, .socialsdiv {
                 width: 100%;
             }
 
@@ -195,12 +234,17 @@
             }
 
             .phrase {
-
                 padding: 20px;
             }
 
             .section {
                 padding: 0 20px;
+            }
+
+            .socialdivlayout {
+                display: flex;
+                justify-content: center;
+                transform: translateY(0);
             }
         }
     </style>
@@ -216,19 +260,39 @@
                 <div class="phrase">
                     <h2 style="font-weight:lighter;">Solutions numériques pour <strong>l'industrie</strong> et <strong>l'éducation</strong></h2>
                 </div>
+                <div class="socialsdiv">
+                    <div class="socialdivlayout">
+                        <div>
+                            <button class="socials">
+                                <img src="img/Socials/Instagram.png" class="socialsimg" />
+                            </button>
+                            <button class="socials">
+                                <img src="img/Socials/Linkedin.png" class="socialsimg" />
+                            </button>
+                            <button class="socials">
+                                <img src="img/Socials/Twitter.png" class="socialsimg" />
+                            </button>
+                            <button class="socials">
+                                <img src="img/Socials/Youtube.png" class="socialsimg" />
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                
             </div>
 
 
             <div style="overflow:auto">
                 <div class="section">
-                    <div class="left" >
+                    <div class="left">
                         <h2 class="title">Qui sommes-nous ?</h2>
                         <div style=" display: flex; justify-content: center; transform:translateY(-15px)">
                             <div class="underline"></div>
                         </div>
-                        
+
                         <div class="sectioncontent">
-                            <img class="contentimg" src="img/SpaceLabs/IMG_20210602_092055.jpg" align="right" style="width:30%;">
+                            <img class="contentimg" src="img/SpaceLabs/IMG_20210602_092055.jpg" align="right" >
                             <p>
                                 SpaceLabs, c'est une équipe de 6 apprentis-ingénieurs passionnés
                                 par la technologie et qui souhaite partager ses connaissances
@@ -252,7 +316,7 @@
                             <div class="underline"></div>
                         </div>
                         <div class="sectioncontent">
-                            <img class="contentimg" src="img/Unsplash/marilia-castelli-l74VaCZon7I-unsplash.jpg" align="right" style="width:35%">
+                            <img class="contentimg" src="img/Unsplash/marilia-castelli-l74VaCZon7I-unsplash.jpg" align="right" >
                             <p>
                                 Initialisation à la programmation sur
                                 des vrais robots ! <br /><br />
@@ -280,7 +344,7 @@
                         <div class="underline"></div>
                     </div>
                     <div class="sectioncontent">
-                        <img class="contentimg" src="img/Unsplash/thisisengineering-raeng-H4ClLKv3pqw-unsplash.jpg" align="right" style="width:40%">
+                        <img class="contentimg" src="img/Unsplash/thisisengineering-raeng-H4ClLKv3pqw-unsplash.jpg" align="right">
                         <p>
                             SpaceLabs, c'est une équipe de 6 apprentis-ingénieurs passionnés
                             par la technologie et qui souhaite partager ses connaissances
