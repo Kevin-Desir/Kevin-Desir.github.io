@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <title>FCM push notification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js" ></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js" ></script>
+</head>
+
+<body>
+  <h1>Send notification</h1>
+
+  <input type="text" id="token" placeholder="Enter user token ID">
+  <input type="text" id="title" placeholder="Title" >
+  <input type="text" id="msg" placeholder="Message" >
+  <button onclick="SendNotification()">Send</button>
+  <div id="tokenId"></div>
+  <script src="app.js"></script>
+</body>
+</html>
+
